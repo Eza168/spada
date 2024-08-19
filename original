@@ -1,0 +1,2215 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>SPADA PPG UNG</title>
+    <link rel="shortcut icon" href="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/favicon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, SPADA PPG UNG" />
+<link rel="stylesheet" type="text/css" href="https://spada.ppg.ung.ac.id/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://spada.ppg.ung.ac.id/theme/styles.php/almondb/1673917304_1/all" />
+<link rel="stylesheet" type="text/css" href="https://spada.ppg.ung.ac.id/theme/almondb/style/frontpage.css" />
+<link rel="stylesheet" type="text/css" href="https://spada.ppg.ung.ac.id/theme/almondb/style/splide.min.css" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/spada.ppg.ung.ac.id","homeurl":{},"sesskey":"DTHwWl9lDw","sessiontimeout":"28800","sessiontimeoutwarning":"1200","themerev":"1673917304","slasharguments":1,"theme":"almondb","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1673917200","admin":"admin","svgicons":true,"usertimezone":"America\/New_York","courseId":1,"courseContextId":2,"contextid":2,"contextInstanceId":1,"langrev":1673917200,"templaterev":"1673917200","developerdebug":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":true,"base":"https:\/\/spada.ppg.ung.ac.id\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/spada.ppg.ung.ac.id\/theme\/yui_combo.php?","combine":true,"filter":"RAW","insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/spada.ppg.ung.ac.id\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/spada.ppg.ung.ac.id\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/spada.ppg.ung.ac.id\/theme\/yui_combo.php?m\/1673917200\/","combine":true,"comboBase":"https:\/\/spada.ppg.ung.ac.id\/theme\/yui_combo.php?","ext":false,"root":"m\/1673917200\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":"DEBUG","modules":{"moodle-core-event":{"requires":["event-custom"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/spada.ppg.ung.ac.id\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/spada.ppg.ung.ac.id\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1673917200\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/spada.ppg.ung.ac.id\/lib\/javascript.php\/1673917200\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/spada.ppg.ung.ac.id\/lib\/javascript.php\/1673917200\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+    
+        /* theme-color */
+        .header-area, .footer-header-underline, .hybtn, .item-icon i {
+            border-color: #4272d7;
+        }
+        .hytext, .main-menu li.active a, a:hover, .main-menu li a:hover, .footer-menu li a:hover, 
+        .hybtn:hover, .icon-icon i, .item-icon i:hover, .video-img-thumbnail a:hover, 
+        .blog-tags a:hover, .blog-btn .read-more-btn:hover, .author-content a:hover, .address-line p a:hover {
+            color: #4272d7;
+        }
+        .hybtn, button.active, .icon-box-content, .item-icon i, .theme-bg, .course-inner::after, .project-inner::after, 
+        .social-links li:hover, #scrollUp, .scrollUp {
+            background-color: #4272d7;
+        }
+        .box:hover{text-decoration:none;box-shadow:0 0 10px 3px #cff1ff; border-color:#4272d7}
+
+    .block03desing2 {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizelegibility;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+    .block03desing2 .fdb-box {
+        height:200px;
+        background: #ffffff;
+        padding: 2rem 2rem;
+        overflow: hidden;
+        color: #444444;
+        border-radius: 0.25rem;
+        box-shadow: 0 0.3125rem 0.875rem 0 rgba(129, 129, 129, 0.2) !important;
+    }
+    .block03desing2 .fdb-touch {
+        border-top: solid 0.3125rem #4272d7;
+    z-index: 2;
+    }
+    .fdb-box h6 {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    .block03desing3 .boxhy {
+        padding:30px;
+        background:white;
+        width:100%;
+        height: 100%;
+        border:1px solid #4272d7;
+        border-radius:0px;
+        transition:.4s all; 
+    }
+    .block03desing3 .boxhy-wrap:hover .boxhy {
+        filter:blur(3px);
+        opacity:.5;
+        transform: scale(.98);
+        box-shadow:none;
+    }
+    .block03desing3 .boxhy-wrap:hover .boxhy:hover {
+        transform:scale(1);
+        filter:blur(0px);
+        opacity:1;
+        box-shadow:0 8px 20px 0px rgba(0,0,0,0.125);
+    }
+    .block04desing1__arrow {
+        z-index: 1;
+        width: 2em;
+        height: 2em;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        padding: 0;
+        opacity: .7;
+        font-size: 1rem;
+    }
+    .block06desing2 .img-area img {
+        position:absolute;
+        margin-top: 100px;
+        right:0px;
+        bottom:0;
+        height:440px;
+        content:"";
+        z-index:1
+    }
+    .block06desing2 .choose-area {
+        background:#4272d7
+    }
+    .block06desing2 .choose-content p {
+        color:white;
+        font-size:14px;
+        margin-bottom:20px
+    }
+    .block07desing1 .card-body h6 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .block07 .splide__container {
+        position: relative;
+        box-sizing: border-box;
+    }
+    .block07 .splide__list {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: -webkit-max-content;
+        width: max-content;
+        will-change: auto;
+    }
+    .block07 .splide.is-active .splide__list {
+        display: flex;
+        align-items: flex-start;
+    }
+    .block07 .splide__pagination {
+        display: inline-flex;
+        align-items: center;
+        width: 40%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .block07 .splide__pagination li {
+        list-style-type: none;
+        display: inline-block;
+        line-height: 1;
+        margin: 0;
+    }
+    .block07 .splide__pagination li button {
+        background-color: transparent;
+        border: 1px solid #4272d7;
+        height: 10px;
+        margin: 0 7px;
+        width: 10px;
+        border-radius: 50%;
+    }
+    .block07 .splide__pagination li button.is-active {
+        background-color: #4272d7;
+    }
+    .splide {
+        visibility: hidden;
+    }
+    .block07 .splide,
+    .block07 .splide__slide {
+        position: relative;
+        outline: none;
+    }
+    .block07 .splide__slide {
+        box-sizing: border-box;
+        list-style-type: none !important;
+        margin: 0;
+        flex-shrink: 0;
+    }
+    .block07 .splide__slide img {
+        vertical-align: bottom;
+    }
+    .block07 .splide__slider {
+        position: relative;
+    }
+    .block07 .splide__track {
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .block07 .splide--draggable > .splide__track > .splide__list > .splide__slide {
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    .block07 .splide--ttb > .splide__track > .splide__list {
+        display: block;
+    }
+    .block07 .splide--ttb > .splide__pagination {
+        width: auto;
+    }
+    .block07 .splide__arrow--next {
+        right: 0em;
+    }
+    .block07 .splide__arrow--prev {
+        left: 0em;
+    }
+    .block07 .splide__arrow {
+        top: 1%;
+        background:  #4272d7;
+    }
+    .hy__container {
+        padding: 0;
+        margin-bottom: 2.35765%;
+        background-color: #fff;
+        border-radius: 0.2rem;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+    }
+    .hy__container .hy__image img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 2px 2px 0 0;
+    }
+    .hy__container h6 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    .hy__total {
+        font-weight: 600;
+    }
+    .hy__info {
+        padding: 1em;
+    }
+    .hy__image {
+        margin: 0;
+    }
+    .hy__overlay {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        background-color: #4272d7;
+        overflow: auto;
+        width: auto;
+        height: 50%;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        transform: scale(0);
+        -webkit-transition: .5s ease;
+        transition: .5s ease;
+        border-radius: 2px;
+        opacity: 0.9;
+        scrollbar-color: rgb(136, 136, 136)  #4272d7; 
+    }
+    .hy__overlay::-webkit-scrollbar-thumb {
+        background: rgb(136, 136, 136);
+        border-radius: 10px;
+    }
+    .hy__container:hover .hy__overlay {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+    .hy__text {
+        color: white;
+        font-size: 16px;
+        padding : 25px;
+    }
+    .block08desing3 .card {
+        border-radius: 0.2rem;
+    }
+    .block08desing3 .card, .card-img-top {
+        border-top-left-radius: 0.2rem ;
+        border-top-right-radius: 0.2rem ;
+    }
+    .block08desing3 .card-body h6 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .block08desing4 .card {
+        border-radius: 0.2rem;
+    }
+    .block08desing4 .card, .card-img-top {
+        border-top-left-radius: 0.2rem ;
+        border-bottom-left-radius: 0.2rem ;
+        border-top-right-radius: 0;
+    }
+    .block08desing4 .card-body h6 {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .block08desing4 .card-body {
+        padding: 1.0rem 0.2rem .5rem 0.01rem;
+    }
+    @media (max-width: 767.98px) {
+        .block08desing4 .card .card-body {
+            padding: 0.625rem;
+        }
+    }
+    .teachers .social li a:hover,.teachers .teacher-content h4 span {
+        color: #4272d7;
+    }
+    .teachers .social,.teachers .teacher-content:hover {
+        background: #4272d7;
+    }
+
+    .teachers {
+        background: #fff;
+    }
+    .teachers .teachers-slider{
+        margin-top:30px;
+    }
+    .teachers .single-teacher {
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .teachers .teacher-head {
+        position: relative;
+    }
+    .teachers .teacher-head.overlay::before {
+        opacity: 0;
+        z-index: 1;
+        visibility: hidden;
+    }
+    .teachers .single-teacher:hover .teacher-head.overlay:before{
+        opacity:0.8;
+        visibility:visible
+    }
+    .teachers .teacher-head img{
+        height:100%;
+        width:100%;
+        text-align:center;
+    }
+    .teachers .social {
+        width: 75px;
+        position: absolute;
+        top: 15px;
+        text-align: center;
+        padding: 15px 0;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        left: 15px;
+        z-index: 2;
+        -webkit-transform: translateY(-100%);
+        -moz-transform: translateY(-100%);
+        transform: translateY(-100%);
+    }
+    .teachers .single-teacher:hover .social{
+        opacity:1;
+        visibility:visible;
+        transform: translateY(0%);
+    }
+    .teachers .social li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .teachers .social li:last-child{
+        margin:0;
+    }
+    .teachers .social li a {
+        color: #fff;
+        font-size: 14px;
+        width: 60px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid #fff;
+        display: inline-block;
+    }
+    .teachers .social li a:hover{
+        border-color:transparent;
+        background:#fff;
+    }
+    .teachers .teacher-content {
+        background: #fff;
+        padding: 12px 30px;
+        text-align: center;
+        position: absolute;
+        bottom: -15px;
+        left: 15px;
+        z-index: 33;
+        -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
+        -webkit-transition:all 0.3s ease 0s;
+        -moz-transition:all 0.3s ease 0s;
+        transition:all 0.3s ease 0s;
+    }
+    .teachers .single-teacher:hover .teacher-content,
+    .teachers .single-teacher.active .teacher-content{
+        transform:scale(1.0);
+        opacity:1;
+        visibility:visible;
+    }
+    .teachers .teacher-content:hover h4,
+    .teachers .teacher-content:hover span{
+        color:#fff;
+    }
+    .teachers .teacher-content h4 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .teachers .teacher-content a {
+        text-decoration: none;
+    }
+    .teachers .teacher-content h4 span {
+        display: block;
+        font-weight: 400;
+        font-size: 15px;
+        margin-top: 5px;
+        -webkit-transition:all 0.3s ease 0s;
+        -moz-transition:all 0.3s ease 0s;
+        transition:all 0.3s ease 0s;
+    }
+    .overlay{
+        position:relative
+    }
+    .overlay::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.8;
+        background: #20232E;
+        content: "";
+        -webkit-transition: all 0.3s ease 0s;
+        -moz-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+
+    .splide__container {
+        position: relative;
+        box-sizing: border-box;
+    }
+    .splide__list {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: -webkit-max-content;
+        width: max-content;
+        will-change: auto;
+    }
+    .splide.is-active .splide__list {
+        display: flex;
+        align-items: flex-start;
+    }
+    .splide__pagination {
+        display: inline-flex;
+        align-items: center;
+        width: 40%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .splide__pagination li {
+        list-style-type: none;
+        display: inline-block;
+        line-height: 1;
+        margin: 0;
+    }
+    .splide__pagination li button {
+        background-color: transparent;
+        border: 1px solid #4272d7;
+        height: 10px;
+        margin: 0 7px;
+        width: 10px;
+        border-radius: 50%;
+    }
+    .splide__pagination li button.is-active {
+        background-color: #4272d7;
+    }
+    .splide {
+        visibility: hidden;
+    }
+    .splide,
+    .splide__slide {
+        position: relative;
+        outline: none;
+    }
+    .splide__slide {
+        box-sizing: border-box;
+        list-style-type: none !important;
+        margin: 0;
+        flex-shrink: 0;
+    }
+    .splide__slide img {
+        vertical-align: bottom;
+    }
+    .splide__slider {
+        position: relative;
+    }
+    .splide__track {
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .splide--draggable > .splide__track > .splide__list > .splide__slide {
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    .splide--ttb > .splide__track > .splide__list {
+        display: block;
+    }
+    .splide--ttb > .splide__pagination {
+        width: auto;
+    }
+    .splide__arrow--next {
+        right: 0em;
+    }
+    .splide__arrow--prev {
+        left: 0em;
+    }
+    .splide__arrow {
+        top: 1%;
+        background:  #4272d7;
+    }
+
+    .block09desing1 {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizelegibility;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+    .block09desing1 .fdb-box {
+        background: #ffffff;
+        padding: 3rem 4rem;
+        overflow: hidden;
+        color: #444444;
+        border: 1px solid  #4272d7;
+        border-radius: 0.25rem;
+    }
+    .block09desing1 .fdb-touch {
+        border-top: solid 0.3125rem #4272d7;
+        z-index: 2;
+    }
+    .block09desing1 h6 {
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 10px;
+    }
+    .block-text-box {
+        padding: 15px 0;
+        color: #ffffff;
+        border-radius: 0.25rem;
+        background: #4272d7;
+        opacity: 0.9;
+    }
+
+    .block09 .single-box {
+        height: 150px;
+        background-size: cover;
+        padding-top:35px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+    .block09 .single-box-color {
+        height: 100px;
+        background-size: cover;
+        padding-top:35px;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+    }
+
+    .block09desing2 img {
+        opacity: 0.5;
+    }
+    .block09desing2 h6 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .block09desing3 img {
+        opacity: 0.5;
+    }
+    .block09desing3 h6 {
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+    .block09 .single-box-alt {
+        font-size: 13px; 
+        font-weight: 500;
+        height: 50px;
+        position:absolute; 
+        left:0px;
+        right:0px;
+        bottom:0px; 
+        width:100%;
+        opacity: 0.9;
+    }
+    .block09 .single-box-alt-color {
+        font-size: 13px; 
+        font-weight: 500;
+        height: 50px;
+        position:absolute; 
+        left:0px;
+        right:0px;
+        bottom:25%; 
+        width:100%;
+        opacity: 0.9;
+    }
+
+    .block09 .splide__container {
+        position: relative;
+        box-sizing: border-box;
+    }
+    .block09 .splide__list {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: -webkit-max-content;
+        width: max-content;
+        will-change: auto;
+    }
+    .block09 .splide.is-active .splide__list {
+        display: flex;
+        align-items: flex-start;
+    }
+    .block09 .splide__pagination {
+        display: inline-flex;
+        align-items: center;
+        width: 40%;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .block09 .splide__pagination li {
+        list-style-type: none;
+        display: inline-block;
+        line-height: 1;
+        margin: 0;
+    }
+    .block09 .splide__pagination li button {
+        background-color: transparent;
+        border: 1px solid #4272d7;
+        height: 10px;
+        margin: 0 7px;
+        width: 10px;
+        border-radius: 50%;
+    }
+    .block09 .splide__pagination li button.is-active {
+        background-color: #4272d7;
+    }
+    .block09 .splide {
+        visibility: hidden;
+    }
+    .block09 .splide,
+    .block09 .splide__slide {
+        position: relative;
+        outline: none;
+    }
+    .block09 .splide__slide {
+        box-sizing: border-box;
+        list-style-type: none !important;
+        margin: 0;
+        flex-shrink: 0;
+    }
+    .block09 .splide__slide img {
+        vertical-align: bottom;
+    }
+    .block09 .splide__slider {
+        position: relative;
+    }
+    .block09 .splide__track {
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    }
+    .block09 .splide--draggable > .splide__track > .splide__list > .splide__slide {
+        -webkit-user-select: none;
+        user-select: none;
+    }
+    .block09 .splide--ttb > .splide__track > .splide__list {
+        display: block;
+    }
+    .block09 .splide--ttb > .splide__pagination {
+        width: auto;
+    }
+    .block09 .splide__arrow--next {
+        right: 0em;
+    }
+    .block09 .splide__arrow--prev {
+        left: 0em;
+    }
+    .block09 .splide__arrow {
+        top: 1%;
+        background:  #4272d7;
+    }
+        .tag_list {
+            font-size: 12px;
+        }
+        .tag_list b{
+            display: none;
+        }
+
+        .slider_arrow_left, .slider_arrow_right {
+            position: relative;
+            top: -30px;
+        }
+        .slider_arrow_right a, .slider_arrow_left a {
+        opacity: .9;
+        background-color: #4272d7; 
+        }
+    @media only screen and (max-width: 576px) {
+        .block19desing2 .col-xs {
+            width: 50%;
+        }
+    }
+    .setupbutton{
+        position: relative; 
+        bottom: 20px;
+        margin-left: 20px;
+    }
+    .setup1 {
+        display: block;
+    }
+    .setup1 #page {
+        margin-top: 40px;
+        margin-bottom: 45px;
+    }
+    .setup1 #page-content{
+        height: auto;
+    }
+    .setup1 #region-main {
+    height: auto;
+    padding-bottom : 40px;
+    overflow-x: auto;
+    overflow-y: visible;
+    }
+    .setup1 #region-main #site-news-forum {
+    display: block !important;
+    }
+    .setup1 #region-main #frontpage-available-course-list{
+        display: block !important;
+    }
+    .setup1 #region-main #frontpage-course-list{
+        display: block !important;
+    }
+    .setup1 #region-main #frontpage-category-names{
+        display: block !important;
+    }
+    .setup1 #region-main #frontpage-category-combo{
+        display: block !important;
+    }
+    .setup1 #region-main .simplesearchform {
+        display: none !important;
+    }
+    .setup1 #region-main .buttons{
+        display: none !important;
+    }
+    .setup1 #region-main .skip-block-to{
+        display: none !important;
+    }
+    .setup1 #region-main .box{
+        padding-top : 0px !important;
+        padding-bottom : 0px !important;
+    }
+    </style>
+    
+
+</head>
+
+<body  id="page-site-index" class="limitedwidth format-site course path-site chrome android dir-ltr lang-en yui-skin-sam yui3-skin-sam spada-ppg-ung-ac-id pagelayout-frontpage course-1 context-2 notloggedin mobiletheme uses-drawers">
+
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+<!-- Start Header Area -->
+<!-- End Header Area -->
+<!-- Start Slider Area  -->
+        <div style="margin-top:0px;"></div>
+        <div id="carouselExampleCaptions" class="carousel slide " data-ride="carousel">
+            <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1" ></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2" ></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="3" ></li>
+            </ol>
+            <div class="carousel-inner">
+                    <div class="carousel-item sldcontainer active">
+                        <img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/slider/1" class="d-block w-100"  height="550" alt="sld" >
+                        <div class="carousel-caption d-none d-md-block sldcontent">
+                            
+                            
+                            <p><a class="hybtn get-started-btn p-8" href="http://www.example.com/">Button</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item sldcontainer ">
+                        <img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/slider/2" class="d-block w-100"  height="550" alt="sld" >
+                        <div class="carousel-caption d-none d-md-block sldcontent">
+                            
+                            
+                            <p><a class="hybtn get-started-btn p-8" href="http://www.example.com/">Button</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item sldcontainer ">
+                        <img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/slider/3" class="d-block w-100"  height="550" alt="sld" >
+                        <div class="carousel-caption d-none d-md-block sldcontent">
+                            
+                            
+                            <p><a class="hybtn get-started-btn p-8" href="http://www.example.com/">Button</a></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item sldcontainer ">
+                        <img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/slider/4" class="d-block w-100"  height="550" alt="sld" >
+                        <div class="carousel-caption d-none d-md-block sldcontent">
+                            
+                            
+                            <p><a class="hybtn get-started-btn p-8" href="http://www.example.com/">Button</a></p>
+                        </div>
+                    </div>
+            
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions"  data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+         <div id="navbarhy">
+             <nav class="navbar header-area fixed-top navbar-light bg-hynavbar navbar-expand header-wrapper moodle-has-zindex" 
+                 aria-label="Site navigation">
+                 
+                 <div class="container-fluid" >
+                     <button class="navbar-toggler aabtn d-block d-lg-none px-1 my-1 border-0" data-toggler="drawers" 
+                         data-action="toggle" data-target="theme_boost-drawers-primary">
+                         <span class="navbar-toggler-icon"></span>
+                         <span class="sr-only">Side panel</span>
+                     </button>
+                     <a href="https://spada.ppg.ung.ac.id/" class="navbar-brand d-none d-xl-flex align-items-center m-0 mr-4 p-0 aabtn">
+                             Platform Sistem Pembelajaran Daring Prodi PPG Universitas Negeri Gorontalo
+                     </a>
+                         <div class="primary-navigation">
+                         </div>
+         
+                     <div class="navbar-nav d-none d-lg-flex my-1 px-1">
+                         <!-- page_heading_menu -->
+                         
+                         <div class="navbar-nav mr-auto">
+                             <div class= 'navbar-nav'><div class='position-relative nav-item' id='dropdown-custom-66b0c5c433ec2'><a class='dropdown-toggle nav-link' id='drop-down-66b0c5c433ec2' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href='#' title='Features' aria-controls='drop-down-menu-66b0c5c433ec2'>Features</a><div class='dropdown-menu' role='menu'
+                            id='drop-down-menu-66b0c5c433ec2' aria-labelledby='drop-down-66b0c5c433ec2'><a class='dropdown-item' role='menuitem'
+                            href='/mod/page/view.php?id=113' target='_self'  title='Colors'>Colors</a><a class='dropdown-item' role='menuitem'
+                            href='/mod/page/view.php?id=114' target='_self'  title='Blocks'>Blocks</a><a class='dropdown-item' role='menuitem'
+                            href='/mod/page/view.php?id=115' target='_self'  title='Easy and fast'>Easy and fast</a><a class='dropdown-item' role='menuitem'
+                            href='/mod/page/view.php?id=116' target='_self'  title='Use now'>Use now</a></div></div><div class='position-relative nav-item' id='dropdown-custom-66b0c5c433ed1'><a class='dropdown-toggle nav-link' id='drop-down-66b0c5c433ed1' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href='#' title='Pages' aria-controls='drop-down-menu-66b0c5c433ed1'>Pages</a><div class='dropdown-menu' role='menu'
+                            id='drop-down-menu-66b0c5c433ed1' aria-labelledby='drop-down-66b0c5c433ed1'><a class='dropdown-item' role='menuitem'
+                            href='/mod/page/view.php?id=1' target='_self'  title='About'>About</a><a class='dropdown-item' role='menuitem'
+                            href='/blog/' target='_self'  title='Blog'>Blog</a></div></div><div class='position-relative nav-item' id='dropdown-custom-66b0c5c433ed7'><a class='dropdown-toggle nav-link' id='drop-down-66b0c5c433ed7' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href='#' title='Courses' aria-controls='drop-down-menu-66b0c5c433ed7'>Courses</a><div class='dropdown-menu' role='menu'
+                            id='drop-down-menu-66b0c5c433ed7' aria-labelledby='drop-down-66b0c5c433ed7'><a class='dropdown-item' role='menuitem'
+                            href='/course/' target='_self'  title='All courses'>All courses</a><a class='dropdown-item' role='menuitem'
+                            href='/course/search.php' target='_blank'  title='Course search'>Course search</a></div></div><div class='position-relative nav-item' id='dropdown-custom-66b0c5c433edc'><a class='dropdown-toggle nav-link' id='drop-down-66b0c5c433edc' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href='#' title='Smooth' aria-controls='drop-down-menu-66b0c5c433edc'>Smooth</a><div class='dropdown-menu' role='menu'
+                            id='drop-down-menu-66b0c5c433edc' aria-labelledby='drop-down-66b0c5c433edc'><a class='dropdown-item' role='menuitem'
+                            href='#block01' target='_self'  title='Title box'>Title box</a><a class='dropdown-item' role='menuitem'
+                            href='#block02' target='_self'  title='Icon box'>Icon box</a><a class='dropdown-item' role='menuitem'
+                            href='#block03' target='_self'  title='Features'>Features</a><a class='dropdown-item' role='menuitem'
+                            href='#block04' target='_self'  title='Latest'>Latest</a><a class='dropdown-item' role='menuitem'
+                            href='#block05' target='_self'  title='WHY we'>WHY we</a><a class='dropdown-item' role='menuitem'
+                            href='#block06' target='_self'  title='Working with us'>Working with us</a><a class='dropdown-item' role='menuitem'
+                            href='#block07' target='_self'  title='Course'>Course</a><a class='dropdown-item' role='menuitem'
+                            href='#block08' target='_self'  title='Teacher'>Teacher</a><a class='dropdown-item' role='menuitem'
+                            href='#block09' target='_self'  title='Category'>Category</a><a class='dropdown-item' role='menuitem'
+                            href='#block10' target='_self'  title='Testimonials'>Testimonials</a><a class='dropdown-item' role='menuitem'
+                            href='#block11' target='_self'  title='Blog posts'>Blog posts</a><a class='dropdown-item' role='menuitem'
+                            href='#block18' target='_self'  title='Block HTML'>Block HTML</a><a class='dropdown-item' role='menuitem'
+                            href='#block19' target='_self'  title='Brands'>Brands</a><a class='dropdown-item' role='menuitem'
+                            href='#block20' target='_self'  title='Footer'>Footer</a></div></div><div class='nav-item'><a class='nav-item nav-link' href='#block08' target='_self'>Teachers</a><div></div></div><div class='nav-item'><a class='nav-item nav-link' href='https://doc.themesalmond.com/' target='_blank'>Documentation</a><div></div></div><div class='position-relative nav-item' id='dropdown-custom-66b0c5c433ef3'><a class='dropdown-toggle nav-link' id='drop-down-66b0c5c433ef3' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' href='#' title='' aria-controls='drop-down-menu-66b0c5c433ef3'></a><div class='dropdown-menu' role='menu'
+                            id='drop-down-menu-66b0c5c433ef3' aria-labelledby='drop-down-66b0c5c433ef3'></div></div></div>
+                         </div>
+                     </div>
+         
+                     <div id="usernavigation" class="navbar-nav ml-auto">
+         
+                         <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+                                 <div class="usermenu" 
+                                     data-toggle="tooltip" data-placement="bottom" 
+                                     >
+                                         <span class="login pl-2">
+                                                 <a href="https://spada.ppg.ung.ac.id/login/index.php">Log in</a>
+                                         </span>
+                                 </div>
+                         </div>
+                     </div>
+                 </div>
+             </nav>
+             
+             <div  class="drawer drawer-left drawer-primary d-print-none not-initialized" data-region="fixed-drawer" id="theme_boost-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1">
+                 <div class="drawerheader">
+                     <button
+                         class="btn drawertoggle icon-no-margin hidden"
+                         data-toggler="drawers"
+                         data-action="closedrawer"
+                         data-target="theme_boost-drawers-primary"
+                         data-toggle="tooltip"
+                         data-placement="right"
+                         title="Close drawer"
+                     >
+                         <i class="icon fa fa-times fa-fw " aria-hidden="true"  ></i>
+                     </button>
+                 </div>
+                 <div class="drawercontent drag-container" data-usertour="scroller">
+                             <div class="list-group">
+                <a href="https://spada.ppg.ung.ac.id/" class="list-group-item list-group-item-action active " aria-current="true">
+                    Home
+                </a>
+        </div>
+
+                 </div>
+             </div>
+         </div>
+<!-- End Slider Area -->
+<!-- Start section -->
+    <!-- Start section -->
+    
+<section id="block01">
+    <div class="hire-us-area theme-bg" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-9 col-12">
+                    <div class="hire-us-content">
+                        <h2 class="white">Featured Premium Themes</h2><br>
+<p class="white">Themes is built without disturbing the moodle layout, so it will make your work easier. Check out some of the main features of Themes.</p> 
+                    </div>  
+                </div>
+                <div class="col-lg-3 col-md-3  offset-lg-2 col-12 text-right">
+                    <a class="hybtn hire-us-button" href="http://www.example.com/">Button</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section id="block02">
+    <div class="blockbgwhite">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="single-icon-box" style= "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block02/1);" >
+                        <div class="icon-box-content">
+                            <h6 class="iconbox-content-heading"><i><i class="icon fa fa-area-chart fa-fw " aria-hidden="true"  ></i></i> Top Investment Advisors  </h6>
+                            <div class="iconbox-content-body">
+                                Enjoy our free online courses,
+wherever you are and whenever you want. Access course content on mobile, tablet or desktop
+                                <a class="hybtn hybtn-inline read-more-btn" href="https://themesalmond.com/"><i class="fa fa-plus-square"></i> Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-icon-box" style= "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block02/2);" >
+                        <div class="icon-box-content">
+                            <h6 class="iconbox-content-heading"><i><i class="icon fa fa-cog fa-fw " aria-hidden="true"  ></i></i> Top Investment Advisors  </h6>
+                            <div class="iconbox-content-body">
+                                Enjoy our free online courses,
+wherever you are and whenever you want. Access course content on mobile, tablet or desktop
+                                <a class="hybtn hybtn-inline read-more-btn" href="https://themesalmond.com/"><i class="fa fa-plus-square"></i> Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="single-icon-box" style= "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block02/3);" >
+                        <div class="icon-box-content">
+                            <h6 class="iconbox-content-heading"><i><i class="icon fa fa-line-chart fa-fw " aria-hidden="true"  ></i></i> Top Investment Advisors  </h6>
+                            <div class="iconbox-content-body">
+                                Enjoy our free online courses,
+wherever you are and whenever you want. Access course content on mobile, tablet or desktop
+                                <a class="hybtn hybtn-inline read-more-btn" href="https://themesalmond.com/"><i class="fa fa-plus-square"></i> Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+<section id="block09">
+  <div class="block09">
+    <div class="container blockbgwhite">
+      <div class="row">
+        <div class="col-lg-12 text-center ">
+          <div class="section-title-fp hytext"> 
+            <h4> 
+              Available Categories
+            </h4>
+            List of registered categories
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="block09 block09desing1 blockbgwhite">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 m-auto col-lg-4 pb-4">
+              <a class="text-decoration-none" href="https://spada.ppg.ung.ac.id/course/index.php?categoryid=37">
+                <div class="fdb-box fdb-touch " 
+                          
+                          
+                            >
+                  <div class="block-text-box text-center">
+                    <h6>PJOK</h6>
+                    <h6>Over 4 Courses</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 m-auto col-lg-4 pb-4">
+              <a class="text-decoration-none" href="https://spada.ppg.ung.ac.id/course/index.php?categoryid=28">
+                <div class="fdb-box fdb-touch " 
+                          
+                          
+                            >
+                  <div class="block-text-box text-center">
+                    <h6>PJOK</h6>
+                    <h6>Over 3 Courses</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 m-auto col-lg-4 pb-4">
+              <a class="text-decoration-none" href="https://spada.ppg.ung.ac.id/course/index.php?categoryid=39">
+                <div class="fdb-box fdb-touch " 
+                          
+                          
+                            >
+                  <div class="block-text-box text-center">
+                    <h6>Semester 1</h6>
+                    <h6>Over 3 Courses</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 m-auto col-lg-4 pb-4">
+              <a class="text-decoration-none" href="https://spada.ppg.ung.ac.id/course/index.php?categoryid=1">
+                <div class="fdb-box fdb-touch " 
+                          
+                          
+                            >
+                  <div class="block-text-box text-center">
+                    <h6>PRAJAB</h6>
+                    <h6>Over 2 Courses</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 m-auto col-lg-4 pb-4">
+              <a class="text-decoration-none" href="https://spada.ppg.ung.ac.id/course/index.php?categoryid=43">
+                <div class="fdb-box fdb-touch " 
+                          
+                          
+                            >
+                  <div class="block-text-box text-center">
+                    <h6>Matematika</h6>
+                    <h6>Over 2 Courses</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 m-auto col-lg-4 pb-4">
+              <a class="text-decoration-none" href="https://spada.ppg.ung.ac.id/course/index.php?categoryid=47">
+                <div class="fdb-box fdb-touch " 
+                          
+                          
+                            >
+                  <div class="block-text-box text-center">
+                    <h6>Semester 1</h6>
+                    <h6>Over 2 Courses</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 m-auto col-lg-4 pb-4">
+              <a class="text-decoration-none" href="https://spada.ppg.ung.ac.id/course/index.php?categoryid=32">
+                <div class="fdb-box fdb-touch " 
+                          
+                          
+                            >
+                  <div class="block-text-box text-center">
+                    <h6>Semester 1</h6>
+                    <h6>Over 1 Courses</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="col-12 col-md-6 m-auto col-lg-4 pb-4">
+              <a class="text-decoration-none" href="https://spada.ppg.ung.ac.id/course/index.php?categoryid=40">
+                <div class="fdb-box fdb-touch " 
+                          
+                          
+                            >
+                  <div class="block-text-box text-center">
+                    <h6>Semester 2</h6>
+                    <h6>Over 1 Courses</h6>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>  
+    
+<section id="block04">
+        <div class="block04desing1 black-bg blockbgcolor">
+            <div class="container blockbgcolor-b">
+                <div class="row">
+                    <div class="col-sm-12 hy-pb-20">
+                        <div class="section-title-fp text-center hytext">
+                            <h4>LATEST PROJECTS</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="container text-center d-none d-sm-none d-md-block">
+                    <div class="d-none d-sm-none d-md-block ml-auto pb-3">
+                        <div>
+                            <a class="btn-sm float-sm-left block04desing1__arrow text-decoration-none" href="#block04desing1Carousel" role="button" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+                            <a class="hire-us-btn hybtn" href="course/index.php">View All Courses</a>
+                            <a class="btn-sm float-sm-right block04desing1__arrow text-decoration-none" href="#block04desing1Carousel" role="button" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    <div id="block04desing1Carousel" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100 " role="listbox">
+                            <div class="carousel-item row no-gutters active">
+                                <div class="col-md-3 float-left">
+                                    <div class="single-project" style= "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/1);">
+                                        <div class="project-inner">
+                                            <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 1</a></h5>
+                                            <p>Latest caption1</p>
+                                        </div>
+                                    </div>
+                                </div>   
+                                <div class="col-md-3 float-left">
+                                    <div class="single-project" style= "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/2);">
+                                        <div class="project-inner">
+                                            <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 2</a></h5>
+                                            <p>Latest caption2</p>
+                                        </div>
+                                    </div>
+                                </div>   
+                                <div class="col-md-3 float-left">
+                                    <div class="single-project" style= "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/3);">
+                                        <div class="project-inner">
+                                            <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 3</a></h5>
+                                            <p>Latest caption3</p>
+                                        </div>
+                                    </div>
+                                </div>   
+                                <div class="col-md-3 float-left">
+                                    <div class="single-project" style= "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/4);">
+                                        <div class="project-inner">
+                                            <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 4</a></h5>
+                                            <p>Latest caption4</p>
+                                        </div>
+                                    </div>
+                                </div>   
+                            </div>
+                            <div class="carousel-item row no-gutters">
+                                <div class="col-md-3 float-left">
+                                    <div class="single-project" style= "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/5);">
+                                        <div class="project-inner">
+                                            <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 5</a></h5>
+                                            <p>Latest caption5</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 float-left">
+                                    <div class="single-project" style= "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/6);">
+                                        <div class="project-inner">
+                                            <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 6</a></h5>
+                                            <p>Latest caption6</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 float-left">
+                                    <div class="single-project" style= "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/7);">
+                                        <div class="project-inner">
+                                            <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 7</a></h5>
+                                            <p>Latest caption7</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 float-left">
+                                    <div class="single-project" style= "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/8);">
+                                        <div class="project-inner">
+                                            <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 8</a></h5>
+                                            <p>Latest caption8</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-none d-sm-block d-md-none d-block d-sm-none">
+                            <a class="carousel-control-prev " href="#block04desing1Carousel" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#block04desing1Carousel"  data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>    
+                    </div>
+                </div>
+        
+                <div class="container text-center my-3 d-md-none d-lg-none d-xl-none">
+                    <div class="blockbgcolor-b">
+                        <a class="hire-us-btn hybtn" href="course/index.php">View All Courses</a>
+                    </div>  
+                    <div id="block04desing1CarouselMobile" class="carousel slide w-100" data-ride="carousel">
+                        <div class="carousel-inner w-100" >
+                            <div class="carousel-item col-md-3 float-left active ">
+                                <div class="single-project" style = "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/1);">
+                                    <div class="project-inner">
+                                        <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 1</a></h5>
+                                        <p>Latest caption1</p>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="carousel-item col-md-3 float-left  ">
+                                <div class="single-project" style = "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/2);">
+                                    <div class="project-inner">
+                                        <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 2</a></h5>
+                                        <p>Latest caption2</p>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="carousel-item col-md-3 float-left  ">
+                                <div class="single-project" style = "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/3);">
+                                    <div class="project-inner">
+                                        <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 3</a></h5>
+                                        <p>Latest caption3</p>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="carousel-item col-md-3 float-left  ">
+                                <div class="single-project" style = "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/4);">
+                                    <div class="project-inner">
+                                        <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 4</a></h5>
+                                        <p>Latest caption4</p>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="carousel-item col-md-3 float-left  ">
+                                <div class="single-project" style = "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/5);">
+                                    <div class="project-inner">
+                                        <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 5</a></h5>
+                                        <p>Latest caption5</p>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="carousel-item col-md-3 float-left  ">
+                                <div class="single-project" style = "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/6);">
+                                    <div class="project-inner">
+                                        <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 6</a></h5>
+                                        <p>Latest caption6</p>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="carousel-item col-md-3 float-left  ">
+                                <div class="single-project" style = "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/7);">
+                                    <div class="project-inner">
+                                        <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 7</a></h5>
+                                        <p>Latest caption7</p>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="carousel-item col-md-3 float-left  ">
+                                <div class="single-project" style = "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block04/8);">
+                                    <div class="project-inner">
+                                        <h5><a class="text-decoration-none" href="https://moodle.org/">Latest 8</a></h5>
+                                        <p>Latest caption8</p>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                        <a class="carousel-control-prev " href="#block04desing1CarouselMobile" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#block04desing1CarouselMobile"  data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    
+<section id="block03">
+        <div class="block03desing1 gray-bg">
+            <div class="container">
+                <div class="row blockbgcolor-t">
+                    <div class="col-lg-12 text-center blockbgcolor-b">
+                        <div class="section-title-fp hytext">
+                            <h4>WE ARE THEMES ALMOND</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-bemax-item d-flex">
+                            <div class="item-icon">
+                                <a class="text-decoration-none" href="https://themesalmond.com/"><i class="icon fa fa-download fa-fw " aria-hidden="true"  ></i></a>
+                            </div>
+                            <div class="item-content">
+                                <h6><a class="text-decoration-none" href="https://themesalmond.com/">Top Investment Advisors</a></h6>
+                                <p>Vestibulum non diam quis nisl dignissim posuere a vulputate urna nunc velit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-bemax-item d-flex">
+                            <div class="item-icon">
+                                <a class="text-decoration-none" href="https://themesalmond.com/"><i class="icon fa fa-cog fa-fw " aria-hidden="true"  ></i></a>
+                            </div>
+                            <div class="item-content">
+                                <h6><a class="text-decoration-none" href="https://themesalmond.com/">Top Investment Advisors</a></h6>
+                                <p>Vestibulum non diam quis nisl dignissim posuere a vulputate urna nunc velit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-bemax-item d-flex">
+                            <div class="item-icon">
+                                <a class="text-decoration-none" href="https://themesalmond.com/"><i class="icon fa fa-info-circle fa-fw " aria-hidden="true"  ></i></a>
+                            </div>
+                            <div class="item-content">
+                                <h6><a class="text-decoration-none" href="https://themesalmond.com/">Top Investment Advisors</a></h6>
+                                <p>Vestibulum non diam quis nisl dignissim posuere a vulputate urna nunc velit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-bemax-item d-flex">
+                            <div class="item-icon">
+                                <a class="text-decoration-none" href="https://themesalmond.com/"><i class="icon fa fa-clock-o fa-fw " aria-hidden="true"  ></i></a>
+                            </div>
+                            <div class="item-content">
+                                <h6><a class="text-decoration-none" href="https://themesalmond.com/">Top Investment Advisors</a></h6>
+                                <p>Vestibulum non diam quis nisl dignissim posuere a vulputate urna nunc velit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-bemax-item d-flex">
+                            <div class="item-icon">
+                                <a class="text-decoration-none" href="https://themesalmond.com/"><i class="icon fa fa-check fa-fw " aria-hidden="true"  ></i></a>
+                            </div>
+                            <div class="item-content">
+                                <h6><a class="text-decoration-none" href="https://themesalmond.com/">Top Investment Advisors</a></h6>
+                                <p>Vestibulum non diam quis nisl dignissim posuere a vulputate urna nunc velit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single-bemax-item d-flex">
+                            <div class="item-icon">
+                                <a class="text-decoration-none" href="https://themesalmond.com/"><i class="icon fa fa-universal-access fa-fw " aria-hidden="true"  ></i></a>
+                            </div>
+                            <div class="item-content">
+                                <h6><a class="text-decoration-none" href="https://themesalmond.com/">Top Investment Advisors</a></h6>
+                                <p>Vestibulum non diam quis nisl dignissim posuere a vulputate urna nunc velit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    
+<section id="block07">
+    <div class="blockbgwhite">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" >
+                    <div class="section-title-fp  hytext text-center">
+                        <h4>AVAILABLE COURSES</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="block07desing1 container">
+            <div class="card mb-3 h-100"  >
+                <div class="row no-gutters">
+                    <div class="col-lg-4 "> 
+                        <div class="single-course" style="background-image: url();">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 " >
+                        <div class="card-body">
+                            <div class="d-inline-flex" data-toggle="tooltip" data-placement="top" title="Teacher">
+                                <div class="h6 hytext"><p>  </p></div>
+                            </div>
+                            <h5 class="card-title post-heading">
+                                <a href="course/view.php?id=19" class="text-decoration-none">
+                                    kelas-filosofi-pendidikan-a-13
+                                    
+                                </a>
+                            </h5>
+                            <p class="card-text"></p>
+                            <span class="">&nbsp;</span>
+                            <div class="card-text hytext" style="position:absolute; bottom:10px; width:95%; font-size: 13px; font-weight: 500;">
+                                <span data-toggle="tooltip" data-placement="top" title="Category">
+                                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                    <a href="course/index.php?categoryid=47" class="text-decoration-none"> Semester 1 </a>
+                                </span>
+                                <span class="pl-2 pr-2" data-toggle="tooltip" data-placement="top" title="Students Enrolled ">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true">  0</i>
+                                </span>
+                                <span class="float-right d-none d-sm-block" data-toggle="tooltip" data-placement="top" title="Last Modified Date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> Jan 27,2023
+                                </span>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 h-100"  >
+                <div class="row no-gutters">
+                    <div class="col-lg-4 "> 
+                        <div class="single-course" style="background-image: url();">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 " >
+                        <div class="card-body">
+                            <div class="d-inline-flex" data-toggle="tooltip" data-placement="top" title="Teacher">
+                                <div class="h6 hytext"><p>  </p></div>
+                            </div>
+                            <h5 class="card-title post-heading">
+                                <a href="course/view.php?id=18" class="text-decoration-none">
+                                    kelas-teknologi-pendidikan-a-14
+                                    
+                                </a>
+                            </h5>
+                            <p class="card-text"></p>
+                            <span class="">&nbsp;</span>
+                            <div class="card-text hytext" style="position:absolute; bottom:10px; width:95%; font-size: 13px; font-weight: 500;">
+                                <span data-toggle="tooltip" data-placement="top" title="Category">
+                                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                    <a href="course/index.php?categoryid=47" class="text-decoration-none"> Semester 1 </a>
+                                </span>
+                                <span class="pl-2 pr-2" data-toggle="tooltip" data-placement="top" title="Students Enrolled ">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true">  0</i>
+                                </span>
+                                <span class="float-right d-none d-sm-block" data-toggle="tooltip" data-placement="top" title="Last Modified Date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> Jan 27,2023
+                                </span>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 h-100"  >
+                <div class="row no-gutters">
+                    <div class="col-lg-4 "> 
+                        <div class="single-course" style="background-image: url();">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 " >
+                        <div class="card-body">
+                            <div class="d-inline-flex" data-toggle="tooltip" data-placement="top" title="Teacher">
+                                <div class="h6 hytext"><p>  </p></div>
+                            </div>
+                            <h5 class="card-title post-heading">
+                                <a href="course/view.php?id=17" class="text-decoration-none">
+                                    kelas-pendalaman-materi-a-7
+                                    
+                                </a>
+                            </h5>
+                            <p class="card-text"></p>
+                            <span class="">&nbsp;</span>
+                            <div class="card-text hytext" style="position:absolute; bottom:10px; width:95%; font-size: 13px; font-weight: 500;">
+                                <span data-toggle="tooltip" data-placement="top" title="Category">
+                                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                    <a href="course/index.php?categoryid=43" class="text-decoration-none"> Matematika </a>
+                                </span>
+                                <span class="pl-2 pr-2" data-toggle="tooltip" data-placement="top" title="Students Enrolled ">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true">  0</i>
+                                </span>
+                                <span class="float-right d-none d-sm-block" data-toggle="tooltip" data-placement="top" title="Last Modified Date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> Jan 27,2023
+                                </span>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 h-100"  >
+                <div class="row no-gutters">
+                    <div class="col-lg-4 "> 
+                        <div class="single-course" style="background-image: url();">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 " >
+                        <div class="card-body">
+                            <div class="d-inline-flex" data-toggle="tooltip" data-placement="top" title="Teacher">
+                                <div class="h6 hytext"><p>  </p></div>
+                            </div>
+                            <h5 class="card-title post-heading">
+                                <a href="course/view.php?id=16" class="text-decoration-none">
+                                    kelas-belajar-menghitung-a-6
+                                    
+                                </a>
+                            </h5>
+                            <p class="card-text"></p>
+                            <span class="">&nbsp;</span>
+                            <div class="card-text hytext" style="position:absolute; bottom:10px; width:95%; font-size: 13px; font-weight: 500;">
+                                <span data-toggle="tooltip" data-placement="top" title="Category">
+                                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                    <a href="course/index.php?categoryid=43" class="text-decoration-none"> Matematika </a>
+                                </span>
+                                <span class="pl-2 pr-2" data-toggle="tooltip" data-placement="top" title="Students Enrolled ">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true">  0</i>
+                                </span>
+                                <span class="float-right d-none d-sm-block" data-toggle="tooltip" data-placement="top" title="Last Modified Date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> Jan 27,2023
+                                </span>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 h-100"  >
+                <div class="row no-gutters">
+                    <div class="col-lg-4 "> 
+                        <div class="single-course" style="background-image: url();">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 " >
+                        <div class="card-body">
+                            <div class="d-inline-flex" data-toggle="tooltip" data-placement="top" title="Teacher">
+                                <div class="h6 hytext"><p>  </p></div>
+                            </div>
+                            <h5 class="card-title post-heading">
+                                <a href="course/view.php?id=15" class="text-decoration-none">
+                                    kelas-bahasa-navi-a-12
+                                    
+                                </a>
+                            </h5>
+                            <p class="card-text"></p>
+                            <span class="">&nbsp;</span>
+                            <div class="card-text hytext" style="position:absolute; bottom:10px; width:95%; font-size: 13px; font-weight: 500;">
+                                <span data-toggle="tooltip" data-placement="top" title="Category">
+                                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                    <a href="course/index.php?categoryid=40" class="text-decoration-none"> Semester 2 </a>
+                                </span>
+                                <span class="pl-2 pr-2" data-toggle="tooltip" data-placement="top" title="Students Enrolled ">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true">  0</i>
+                                </span>
+                                <span class="float-right d-none d-sm-block" data-toggle="tooltip" data-placement="top" title="Last Modified Date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> Jan 26,2023
+                                </span>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 h-100"  >
+                <div class="row no-gutters">
+                    <div class="col-lg-4 "> 
+                        <div class="single-course" style="background-image: url();">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 " >
+                        <div class="card-body">
+                            <div class="d-inline-flex" data-toggle="tooltip" data-placement="top" title="Teacher">
+                                <div class="h6 hytext"><p>  </p></div>
+                            </div>
+                            <h5 class="card-title post-heading">
+                                <a href="course/view.php?id=14" class="text-decoration-none">
+                                    kelas-bahasa-tubuh-a-7
+                                    
+                                </a>
+                            </h5>
+                            <p class="card-text"></p>
+                            <span class="">&nbsp;</span>
+                            <div class="card-text hytext" style="position:absolute; bottom:10px; width:95%; font-size: 13px; font-weight: 500;">
+                                <span data-toggle="tooltip" data-placement="top" title="Category">
+                                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                    <a href="course/index.php?categoryid=39" class="text-decoration-none"> Semester 1 </a>
+                                </span>
+                                <span class="pl-2 pr-2" data-toggle="tooltip" data-placement="top" title="Students Enrolled ">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true">  0</i>
+                                </span>
+                                <span class="float-right d-none d-sm-block" data-toggle="tooltip" data-placement="top" title="Last Modified Date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> Jan 26,2023
+                                </span>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 h-100"  >
+                <div class="row no-gutters">
+                    <div class="col-lg-4 "> 
+                        <div class="single-course" style="background-image: url();">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 " >
+                        <div class="card-body">
+                            <div class="d-inline-flex" data-toggle="tooltip" data-placement="top" title="Teacher">
+                                <div class="h6 hytext"><p>  </p></div>
+                            </div>
+                            <h5 class="card-title post-heading">
+                                <a href="course/view.php?id=13" class="text-decoration-none">
+                                    kelas-belajar-mempelajari-b-6
+                                    
+                                </a>
+                            </h5>
+                            <p class="card-text"></p>
+                            <span class="">&nbsp;</span>
+                            <div class="card-text hytext" style="position:absolute; bottom:10px; width:95%; font-size: 13px; font-weight: 500;">
+                                <span data-toggle="tooltip" data-placement="top" title="Category">
+                                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                    <a href="course/index.php?categoryid=39" class="text-decoration-none"> Semester 1 </a>
+                                </span>
+                                <span class="pl-2 pr-2" data-toggle="tooltip" data-placement="top" title="Students Enrolled ">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true">  0</i>
+                                </span>
+                                <span class="float-right d-none d-sm-block" data-toggle="tooltip" data-placement="top" title="Last Modified Date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> Jan 26,2023
+                                </span>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 h-100"  >
+                <div class="row no-gutters">
+                    <div class="col-lg-4 "> 
+                        <div class="single-course" style="background-image: url();">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 " >
+                        <div class="card-body">
+                            <div class="d-inline-flex" data-toggle="tooltip" data-placement="top" title="Teacher">
+                                <div class="h6 hytext"><p>  </p></div>
+                            </div>
+                            <h5 class="card-title post-heading">
+                                <a href="course/view.php?id=12" class="text-decoration-none">
+                                    kelas-belajar-mempelajari-a-6
+                                    
+                                </a>
+                            </h5>
+                            <p class="card-text"></p>
+                            <span class="">&nbsp;</span>
+                            <div class="card-text hytext" style="position:absolute; bottom:10px; width:95%; font-size: 13px; font-weight: 500;">
+                                <span data-toggle="tooltip" data-placement="top" title="Category">
+                                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                    <a href="course/index.php?categoryid=39" class="text-decoration-none"> Semester 1 </a>
+                                </span>
+                                <span class="pl-2 pr-2" data-toggle="tooltip" data-placement="top" title="Students Enrolled ">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true">  0</i>
+                                </span>
+                                <span class="float-right d-none d-sm-block" data-toggle="tooltip" data-placement="top" title="Last Modified Date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> Jan 26,2023
+                                </span>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3 h-100"  >
+                <div class="row no-gutters">
+                    <div class="col-lg-4 "> 
+                        <div class="single-course" style="background-image: url();">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 " >
+                        <div class="card-body">
+                            <div class="d-inline-flex" data-toggle="tooltip" data-placement="top" title="Teacher">
+                                <div class="h6 hytext"><p>  </p></div>
+                            </div>
+                            <h5 class="card-title post-heading">
+                                <a href="course/view.php?id=11" class="text-decoration-none">
+                                    kelas-mengajar-olahraga-b-5
+                                    
+                                </a>
+                            </h5>
+                            <p class="card-text"></p>
+                            <span class="">&nbsp;</span>
+                            <div class="card-text hytext" style="position:absolute; bottom:10px; width:95%; font-size: 13px; font-weight: 500;">
+                                <span data-toggle="tooltip" data-placement="top" title="Category">
+                                    <i class="fa fa-plus-square" aria-hidden="true"></i>
+                                    <a href="course/index.php?categoryid=37" class="text-decoration-none"> PJOK </a>
+                                </span>
+                                <span class="pl-2 pr-2" data-toggle="tooltip" data-placement="top" title="Students Enrolled ">
+                                    <i class="fa fa-user-circle-o" aria-hidden="true">  0</i>
+                                </span>
+                                <span class="float-right d-none d-sm-block" data-toggle="tooltip" data-placement="top" title="Last Modified Date">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i> Jan 26,2023
+                                </span>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="d-flex justify-content-center hy-pt-5 blockbgcolor-b">
+        <div class="hire-us-btn">
+            <a class="hybtn" href="course/index.php">Button</a>
+        </div>
+    </div>
+</section>
+    
+<section id="block08">
+    <div class="block08desing1 blockbgcolor gray-bg">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12" >
+                  <div class="section-title-fp hytext text-center blockbgwhite-b">
+                      <h4>TEACHERS</h4>
+                  </div>
+                  <div class="item-content text-center hy-pt-5">    
+                        <p>We continue to serve with our distinguished teacher staff. Meet our teachers.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container">
+        <div id="block08desing1-slider" class="splide" >
+            <div class="splide__track" >
+                <ul class="splide__list " >
+                </ul>
+            </div>
+        </div>
+      </div>
+    </div> 
+    <script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+    	new Splide( '#block08desing1-slider', {
+            type    : 'loop',
+            autoplay: true,
+            gap: '1rem',
+            perPage: 4,
+    	    	perMove: 1,
+            pagination: false,
+            direction: document.dir,
+            breakpoints: {
+                1200:{ 
+                  perPage: 3,
+                },
+                980:{
+                    perPage: 2,
+                },
+                700: {
+                    perPage: 1,
+                    pagination: false,
+     		    },
+    	    }
+    	} ).mount();
+    } );
+    </script>
+</section>
+    
+<section id="block05">
+        <div class="block05desing1 blockbgwhite">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center blockbgwhite-b">
+                        <div class="section-title-fp hytext">
+                            <h4>WHY CHOOSE US</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="video-img-thumbnail text-center" style = "background-image: url(https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block05/1);">
+                            <a class="video-play" href="https://www.youtube.com/watch?v=SGo1i4BEBL4"><i class="fa fa-play-circle"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="single-choose-item">
+                            <h6><a class="text-decoration-none" href="https://moodle.org/"><i><i class="icon fa fa-cog fa-fw " aria-hidden="true"  ></i></i> WHY CHOOSE US 1</a></h6>
+                            <p>Latest caption1</p>
+                        </div>
+                        <div class="single-choose-item">
+                            <h6><a class="text-decoration-none" href="https://moodle.org/"><i><i class="icon fa fa-eye fa-fw " aria-hidden="true"  ></i></i> WHY CHOOSE US 2</a></h6>
+                            <p>Latest caption2</p>
+                        </div>
+                        <div class="single-choose-item">
+                            <h6><a class="text-decoration-none" href="https://moodle.org/"><i><i class="icon fa fa-bullhorn fa-fw " aria-hidden="true"  ></i></i> WHY CHOOSE US 3</a></h6>
+                            <p>Latest caption3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    
+<section id="block06">
+        <div class="block06desing1 working-with-us-area gray-bg" >
+            <div class="container"> 
+                <div class="row">
+                    <div class="col-md-6 col-12 text-center d-flex align-items-center">
+                        <div class="hire-us-content hytext">
+                            <div class="section-title-fp">
+                                <h4>WORKİNG WİTH US</h4>
+                            </div>
+                            <p>Add a caption default for your block 6</p>
+                            <a href="http://www.example.com/" class="hybtn hire-us-btn">Button</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 d-none d-md-block">
+                        <div class="hire-us-img">
+                            <img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block06/1" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div></section>
+    
+<section id="block10">
+        <div class="block10desing1 blockbgwhite">
+            <div class="carousel-area container">
+                <div class="section-title-fp d-flex hytext ">
+                    <h4>TESTIMONIALS</h4>
+                    <div class="d-block ml-auto p-2">
+                        <a class="btn-sm mr-1" style="border-radius: 50%;" href="#carouselTestimonials" role="button" data-slide="prev"> 
+                            <i class="fa fa-chevron-left"></i> 
+                        </a>
+                        <a class="btn-sm" style="border-radius: 50%;" href="#carouselTestimonials" role="button" data-slide="next"> 
+                            <i class="fa fa-chevron-right"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>    
+            <div class="container">
+                <div class="row">
+                    <div  id="carouselTestimonials" class="carousel slide col-lg" data-ride="carousel">
+                        <div class="carousel-inner">
+                                <div class="carousel-item testimonial-carousel active">
+                                    <div class="testimonial-content d-flex">
+                                        <i class="fa fa-quote-left"></i>
+                                        <p> </p>
+                                    </div>
+                                    <div class="author-details d-flex">
+                                        <div class="author-img">
+                                            <img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block10/1" alt="">
+                                        </div>
+                                        <div class="author-content">
+                                            <a href="https://themesalmond.com/" class="text-decoration-none"></a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item testimonial-carousel ">
+                                    <div class="testimonial-content d-flex">
+                                        <i class="fa fa-quote-left"></i>
+                                        <p> </p>
+                                    </div>
+                                    <div class="author-details d-flex">
+                                        <div class="author-img">
+                                            <img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block10/2" alt="">
+                                        </div>
+                                        <div class="author-content">
+                                            <a href="https://themesalmond.com/" class="text-decoration-none"></a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item testimonial-carousel ">
+                                    <div class="testimonial-content d-flex">
+                                        <i class="fa fa-quote-left"></i>
+                                        <p> </p>
+                                    </div>
+                                    <div class="author-details d-flex">
+                                        <div class="author-img">
+                                            <img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block10/3" alt="">
+                                        </div>
+                                        <div class="author-content">
+                                            <a href="https://themesalmond.com/" class="text-decoration-none"></a>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>    
+                        <div class="d-none">
+                            <a class="carousel-control-prev btn-sm"  href="#carouselTestimonials" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next btn-sm" href="#carouselTestimonials"  data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+    
+<section id="block11">
+        <div class="blockbgcolor gray-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" >
+                        <div class="section-title-fp hytext text-center">
+                            <h4>ALMOND BLOG</h4>
+                        </div>
+                        <div class="item-content text-center hy-pt-5">    
+                            <p>Welcome to Almondb blog posts.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block11desing1 gray-bg hy-pb-30">
+            <div class="container">  
+                <div class="row">  
+                    
+                </div> 
+            </div>
+        </div>
+</section>
+    
+    <section id="block18">
+        
+    </section>
+    
+<section id="block19">
+        <div class="block19desing1 hy-pt-40 hy-pb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12" >
+                        <div class="section-title-fp hytext text-center hy-pb-40">
+                            <h4>OUR PARTNERS</h4>
+                        </div>    
+                        <div class="item-content text-center hy-pt-5">    
+                            <p>It is a long established fact that a reader will be distracted by
+                                    the readable content of a page when looking at its layout. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="text-center col-xs col-sm col-sm-4 col-md hy-pt-10 hy-pb-10">
+                        <a href="https://themesalmond.com/"><img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block19/1" style="width:100%;" alt=""></a>
+                    </div>
+                    <div class="text-center col-xs col-sm col-sm-4 col-md hy-pt-10 hy-pb-10">
+                        <a href="https://themesalmond.com/"><img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block19/2" style="width:100%;" alt=""></a>
+                    </div>
+                    <div class="text-center col-xs col-sm col-sm-4 col-md hy-pt-10 hy-pb-10">
+                        <a href="https://themesalmond.com/"><img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block19/3" style="width:100%;" alt=""></a>
+                    </div>
+                    <div class="text-center col-xs col-sm col-sm-4 col-md hy-pt-10 hy-pb-10">
+                        <a href="https://themesalmond.com/"><img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block19/4" style="width:100%;" alt=""></a>
+                    </div>
+                    <div class="text-center col-xs col-sm col-sm-4 col-md hy-pt-10 hy-pb-10">
+                        <a href="https://themesalmond.com/"><img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block19/5" style="width:100%;" alt=""></a>
+                    </div>
+                    <div class="text-center col-xs col-sm col-sm-4 col-md hy-pt-10 hy-pb-10">
+                        <a href="https://themesalmond.com/"><img src="https://spada.ppg.ung.ac.id/theme/image.php/almondb/theme/1673917304/almondb/block19/6" style="width:100%;" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div></section>
+    
+<section id="block20">
+    <footer class="footer-header-underline hy-pt-60 hy-pb-20 black-bg"  >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+
+
+                            <div class="widget-title footer-site-name">
+                                Site Name
+                            </div> 
+                            <div class="footer-dec">
+                            <p>It is a long established fact that a reader will be distracted by
+                                    the readable content of a page when looking at its layout. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 ">
+                    <div class="footer-widget">
+                        <div class="widget-title footer-header-underline">
+                            <h6>Company</h6>
+                        </div>
+                        <div class="address-line">
+                            <p>Adres</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <div class="widget-title footer-header-underline">
+                            <h6>Company</h6>
+                        </div>
+                        <ul class="footer-menu">
+                            <li><a class="text-decoration-none" href="https://themesalmond.com" target="_blank">About Us</a></li><li><a class="text-decoration-none" href="https://moodle.org/support" target="_blank">Our Story</a></li><li><a class="text-decoration-none" href="https://moodle.org/development" target="_blank">Terms & Condition</a></li><li><a class="text-decoration-none" href="http://docs.moodle.org" target="_blank">Privacy Policy</a></li><li><a class="text-decoration-none" href="http://docs.moodle.org/en" target="_blank">Site Map</a></li><li><a class="text-decoration-none" href="http://moodle.com/" target="_blank">Moodle.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <div class="widget-title footer-header-underline">
+                            <h6>Help</h6>
+                        </div>
+                        <ul class="footer-menu">
+                        <li><a class="text-decoration-none" href="https://themesalmond.com" target="_blank">About Us</a></li><li><a class="text-decoration-none" href="https://moodle.org/support" target="_blank">Our Story</a></li><li><a class="text-decoration-none" href="https://moodle.org/development" target="_blank">Terms & Condition</a></li><li><a class="text-decoration-none" href="http://docs.moodle.org" target="_blank">Privacy Policy</a></li><li><a class="text-decoration-none" href="http://docs.moodle.org/tr" target="_blank">Site Map</a></li><li><a class="text-decoration-none" href="http://moodle.com/" target="_blank">Moodle.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="copyright-area black-bg">
+    <div class="container">
+            <div class="row ">
+                <div class="col-12 text-center hy-pt-10 social-links">
+                    <ul>
+<li><a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>
+<li><a href="#" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+</ul>
+                </div>
+                <div class="col-12 text-center">
+                    <div class="copyright-area ">
+                        <small>
+                            Copyright © 2022 Designed by
+    <a href="https://www.themealmond.com">themesalmond.com</a>.  All rights reserved.
+                        </small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- End section -->
+<!-- End section -->
+<div>
+    <a role="button" href="#" aria-label="Go to top">
+        <i class="fa fa-angle-up scrollUp"></i>
+    </a>
+</div>
+
+<div class="setup1">    
+    <div class="modal fade" id="setup1Modal" tabindex="-1" aria-labelledby="setup1ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="setup1ModalLabel">...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class= "hy-pt-1">
+                        <div id="navbarHeader">
+                            <div id="page-wrapper" class="container">
+                                <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://spada.ppg.ung.ac.id/lib/javascript.php/1673917200/lib/polyfills/polyfill.js"></script>
+<script src="https://spada.ppg.ung.ac.id/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple.js"></script><script src="https://spada.ppg.ung.ac.id/lib/javascript.php/1673917200/lib/javascript-static.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+                                <div id="page" class="">
+                                    <div id="page-content" class="row d-print-block">
+                                        <div id="region-main-box" class="col-12">
+                                            <section id="region-main" aria-label="Content">
+                                                <span class="notifications" id="user-notifications"></span>
+                                                <div role="main"><span id="maincontent"></span><a class="skip-block skip aabtn" href="#skipavailablecourses">Skip available courses</a><div id="frontpage-available-course-list"><h2>Available courses</h2><div class="courses frontpage-course-list-all"><div class="coursebox clearfix odd first" data-courseid="3" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=3">Testioni Mata Kulaih A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/8/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='Sukardi Ramadhan Dali .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=8&amp;course=1"> Sukardi Ramadhan Dali .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix even" data-courseid="2" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=2">Matematika kelas A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix odd" data-courseid="7" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=7">Kelas Rekayasa Proses Bisnis - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/10/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='HARIANA .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=10&amp;course=1"> HARIANA .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix even" data-courseid="14" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=14">Kelas Bahasa Tubuh - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/14/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='MUCHTAR AHMAD .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=14&amp;course=1"> MUCHTAR AHMAD .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix odd" data-courseid="13" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=13">Kelas Belajar Mempelajari - B</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/15/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='MURSIDAH WATY .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=15&amp;course=1"> MURSIDAH WATY .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix even" data-courseid="12" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=12">Kelas Belajar Mempelajari - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/15/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='MURSIDAH WATY .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=15&amp;course=1"> MURSIDAH WATY .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix odd" data-courseid="15" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=15">Kelas Bahasa Navi - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/14/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='MUCHTAR AHMAD .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=14&amp;course=1"> MUCHTAR AHMAD .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix even" data-courseid="19" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=19">Kelas Filosofi Pendidikan - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/19/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='WRASTAWA RIDWAN .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=19&amp;course=1"> WRASTAWA RIDWAN .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix odd" data-courseid="18" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=18">Kelas Teknologi Pendidikan - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/19/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='WRASTAWA RIDWAN .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=19&amp;course=1"> WRASTAWA RIDWAN .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix even" data-courseid="6" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=6">Kelas Pendidikan Agama Islam - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/10/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='HARIANA .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=10&amp;course=1"> HARIANA .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix odd" data-courseid="5" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=5">Kelas Filosofi PendidikanA -</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/10/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='HARIANA .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=10&amp;course=1"> HARIANA .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix even" data-courseid="4" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=4">Kelas Filosofi Pendidikan - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix odd" data-courseid="11" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=11">Kelas Mengajar Olahraga - B</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/15/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='MURSIDAH WATY .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=15&amp;course=1"> MURSIDAH WATY .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix even" data-courseid="10" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=10">Kelas Mengajar Olahraga - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/14/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='MUCHTAR AHMAD .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=14&amp;course=1"> MUCHTAR AHMAD .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix odd" data-courseid="9" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=9">Kelas Olahraga Kesehatan - B</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/14/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='MUCHTAR AHMAD .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=14&amp;course=1"> MUCHTAR AHMAD .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix even" data-courseid="8" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=8">Kelas Olahraga Kesehatan - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/14/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='MUCHTAR AHMAD .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=14&amp;course=1"> MUCHTAR AHMAD .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix odd" data-courseid="17" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=17">Kelas Pendalaman Materi - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/19/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='WRASTAWA RIDWAN .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=19&amp;course=1"> WRASTAWA RIDWAN .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div><div class="coursebox clearfix even last" data-courseid="16" data-type="1"><div class="info"><h3 class="coursename"><a class="aalink" href="https://spada.ppg.ung.ac.id/course/view.php?id=16">Kelas Belajar Menghitung - A</a></h3><div class="moreinfo"></div></div><div class="content"><div class="row"><div class="col-md-6 col-lg-5 col-sm-12"><ul class="teachers"><li> <div class='chip h6'><img src='https://spada.ppg.ung.ac.id/user/pix.php/19/f1.jpg' class='border border-secondary' title='Teacher' data-toggle='tooltip' alt='WRASTAWA RIDWAN .'/><a href="https://spada.ppg.ung.ac.id/user/view.php?id=19&amp;course=1"> WRASTAWA RIDWAN .</a></div></li></ul></div><div class="col-md-6 col-lg-7"></div></div></div></div></div></div><span class="skip-block-to" id="skipavailablecourses"></span><br /></div>
+                                                
+                                                
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://spada.ppg.ung.ac.id/lib/requirejs.php/1673917200/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://spada.ppg.ung.ac.id/lib/javascript.php/1673917200/lib/jquery/jquery-3.6.1.min',
+        jqueryui: 'https://spada.ppg.ung.ac.id/lib/javascript.php/1673917200/lib/jquery/ui-1.13.2/jquery-ui.min',
+        jqueryprivate: 'https://spada.ppg.ung.ac.id/lib/javascript.php/1673917200/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://spada.ppg.ung.ac.id/lib/javascript.php/1673917200/lib/requirejs/require.min.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+
+    require(['core/usermenu'], function(UserMenu) {
+        UserMenu.init();
+    });
+;
+
+require(['theme_boost/drawers']);
+;
+
+    window.onscroll = function() {navFunction()};
+    var navbar = document.getElementById("navbarhy");
+    var sticky = navbar.offsetTop;
+    function navFunction() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add("stickyhy")
+        } else {
+            navbar.classList.remove("stickyhy");
+        }
+    }
+;
+
+M.util.js_pending('theme_boost/loader');
+require(['theme_boost/loader'], function() {
+    M.util.js_complete('theme_boost/loader');
+});
+;
+
+    M.util.js_pending('theme_boost/loader');
+    require(['theme_boost/loader'], function() {
+        M.util.js_complete('theme_boost/loader');
+    });
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(2, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"trace"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script src="https://spada.ppg.ung.ac.id/lib/javascript.php/1673917200/theme/almondb/js/splide.min.js"></script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random66b0c5c497f9c2'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random66b0c5c497f9c2'); });
+})();
+//]]>
+</script>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
+
+</body>   
+</html>
